@@ -1,0 +1,153 @@
+.memory-result {
+    background-color: #1a202c;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .memory-result .img-container {
+    width: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-result .img-container {
+      width: 95%;
+    }
+  
+    .memory-result .img-container .img-list {
+      text-align: center;
+    }
+  
+    .memory-result .img-container .img-list img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-result .img-container .img-list img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  .memory-result .progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-result .progress-bar {
+      width: 95%;
+      height: 15px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-result .progress-bar {
+      height: 40px;
+    }
+  }
+  
+  .memory-result .progress-bar .progress-slider {
+    background-color: #467aff;
+    border-radius: 20px;
+    width: var(--level);
+    height: 100%;
+  }
+  
+  .memory-result .result {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .memory-result .result h1 {
+    font-size: 40px;
+    color: #467aff;
+    margin-bottom: 0px;
+  }
+  
+  .memory-result .result h3 {
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .memory-result .result button {
+    background-color: #467aff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px solid;
+    color: #fff;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-result .result {
+      width: 95%;
+    }
+  
+    .memory-result .result h1 {
+      font-size: 30px;
+    }
+  
+    .memory-result .result h3 {
+      font-size: 20px;
+    }
+  
+    .memory-result .result button {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-result .result h1 {
+      font-size: 100px;
+    }
+  
+    .memory-result .result h3 {
+      font-size: 60px;
+    }
+  
+    .memory-result .result button {
+      font-size: 30px;
+      padding: 20px 50px;
+    }
+  }
+  
+  .memory-result .levels {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  .memory-result .levels p {
+    margin: 0px;
+    color: #fff;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-result .levels {
+      width: 95%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-result .levels p {
+      font-size: 30px;
+    }
+  }

@@ -1,0 +1,151 @@
+.emoji-rules {
+    background: linear-gradient(179.51deg, #9796f0 0.41%, #fbc7d4 128.48%);
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  
+  .emoji-rules .outer-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-rules .outer-container {
+      width: 95%;
+    }
+  }
+  
+  .emoji-rules .outer-container .inner-container {
+    width: 100%;
+    border: 3px solid #ffffff30;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-rules .outer-container .inner-container {
+      flex-direction: column;
+    }
+  }
+  
+  .emoji-rules .outer-container .back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0px solid;
+    background-color: transparent;
+    align-self: flex-start;
+    color: #334155;
+  }
+
+
+  @media (max-width:576px) {
+    .emoji-rules .outer-container .back-btn {
+        position: static;
+    }
+  }
+
+  @media (min-width:576px) {
+    .emoji-rules .outer-container .back-btn {
+        position: absolute;
+        top:10px; 
+        left: 10px;
+    }
+  }
+  
+  .emoji-rules .outer-container .inner-container .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .emoji-rules .outer-container .inner-container .img-container img {
+    width: 60%;
+  }
+  
+  .emoji-rules .outer-container .inner-container .rules {
+    color: #334155;
+  }
+  
+  @media (min-width: 567px) and (max-width: 768px) {
+    .emoji-rules .outer-container {
+      width: 90%;
+    }
+  }
+
+
+  @media (max-width:576px) {
+    .rules-h2 {
+        text-align: center;
+    }
+  }
+  
+  .emoji-rules .outer-container .inner-container .rules h2 {
+    text-align: center;
+  }
+  
+  .emoji-rules .outer-container .inner-container .rules li {
+    line-height: 32px;
+  }
+  
+  .inner-container .rules div {
+    text-align: center;
+  }
+
+  @media (max-width:576px) {
+    .game-start-btn-container{
+        text-align: center;
+    }
+  }
+  
+  .game-start-btn {
+    background-color: #334155;
+    line-height: 24px;
+    padding: 8px 20px;
+    color: #ffffff;
+    border: 0px solid;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Roboto';
+  }
+  
+  @media (min-width: 2560px) {
+    .emoji-rules .outer-container .back-btn {
+      font-size: 30px;
+    }
+    .emoji-rules .outer-container .inner-container .rules h2 {
+      font-size: 50px;
+    }
+  
+    .emoji-rules .outer-container .inner-container .rules li {
+      font-size: 30px;
+      line-height: 60px;
+    }
+  
+    .game-start-btn {
+      font-size: 30px;
+      padding: 25px 40px;
+    }
+  
+    .emoji-rules .outer-container .inner-container {
+      gap: 50px;
+    }
+  
+    .emoji-rules .outer-container .inner-container .img-container {
+      width: 40%;
+    }
+  
+    .emoji-rules .outer-container .inner-container .img-container img {
+      width: 80%;
+    }
+  }

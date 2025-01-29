@@ -1,0 +1,150 @@
+.rock-game-rules {
+    background-color: #223a5f;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rock-game-rules .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game-rules .container {
+      width: 95%;
+    }
+  }
+  
+  .rock-game-rules .container .back-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: 0px solid;
+    color: #fff;
+    align-self: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  @media (max-width:576px) {
+    .rock-game-rules .container .back-btn {
+      position: static;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game-rules .container .back-btn {
+      font-size: 30px;
+    }
+  }
+  
+  .rock-game-rules .container .heading {
+    color: #fff;
+    font-size: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game-rules .container .heading {
+      font-size: 30px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game-rules .container .heading {
+      font-size: 120px;
+    }
+  }
+  
+  .rock-game-rules .container .img {
+    width: 30%;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game-rules .container .img {
+      width: 70%;
+    }
+  }
+  
+  .rock-game-rules .container .h3-heading {
+    font-size: 30px;
+    align-self: flex-start;
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game-rules .container .h3-heading {
+      font-size: 20px;
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game-rules .container .h3-heading {
+      font-size: 50px;
+    }
+  }
+  
+  .rock-game-rules .container .ul-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .rock-game-rules .container .ul-container .list {
+    width: 50%;
+  }
+  
+  .rock-game-rules .container .ul-container .list .item {
+    line-height: 35px;
+    color: #fff;
+  }
+  
+  .rock-game-rules .container .ul-container .list .item span {
+    color: #c07f07;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game-rules .container .ul-container {
+      flex-direction: column;
+    }
+  
+    .rock-game-rules .container .ul-container .list {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game-rules .container .ul-container .list .item {
+      font-size: 25px;
+      line-height: 55px;
+    }
+  }
+  
+  .rock-game-rules .container .start-btn {
+    background-color: #ffff;
+    border: 0px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #223a5f;
+    align-self: flex-start;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game-rules .container .start-btn {
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game-rules .container .start-btn {
+      font-size: 30px;
+    }
+  }

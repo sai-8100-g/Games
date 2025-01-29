@@ -1,0 +1,81 @@
+.flip-popup {
+    background-color: #fff;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 100;
+    top: 30%;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    .flip-popup {
+      top: 15%;
+      width: 95%;
+    }
+  }
+  
+  .flip-popup button {
+    background-color: transparent;
+    border: 0px solid;
+    border-top-right-radius: 10px;
+    color: #000;
+    align-self: flex-end;
+  }
+  
+  @media (min-width: 2560px) {
+    .flip-popup button {
+      font-size: 40px;
+    }
+  }
+  
+  .flip-popup h2 {
+    align-self: center;
+    font-size: 30px;
+    color: rgba(55, 52, 55, 0.8);
+  }
+  
+  @media (min-width: 2560px) {
+    .flip-popup h2 {
+      font-size: 80px;
+    }
+  }
+  
+  .flip-popup .flip-ul-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .flip-popup .flip-ul-container {
+      flex-direction: column;
+      height: 400px;
+      overflow-y: auto;
+    }
+  }
+  
+  .flip-popup .flip-ul-container .flip-list {
+    width: calc(50% - 10px);
+  }
+  
+  .flip-popup .flip-ul-container .flip-list .item {
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(55, 52, 55, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .flip-popup .flip-ul-container .flip-list {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .flip-popup .flip-ul-container .flip-list .item {
+      font-size: 30px;
+      line-height: 60px;
+    }
+  }

@@ -1,0 +1,157 @@
+.memory-rules {
+    background-color: #1a202c;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+  }
+  
+  .memory-rules div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 576px) {
+    .memory-rules div {
+      width: 95%;
+    }
+  }
+  
+  .memory-rules div .back-btn {
+    background-color: transparent;
+    border: 0px solid;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #ffffff;
+    align-self: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  @media (max-width:576px) {
+    .memory-rules div .back-btn {
+        position: static;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-rules div .back-btn {
+      font-size: 30px;
+    }
+  }
+  
+  .memory-rules div h1 {
+    color: #ffffff;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    font-size: 5vw;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-rules div h1 {
+      font-size: 10vw;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-rules div h1 {
+      font-size: 5vw;
+    }
+  }
+  
+  .memory-rules div img {
+    width: 40%;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-rules div img {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-rules div img {
+      width: 40%;
+    }
+  }
+  
+  .memory-rules div .ul-containers {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .memory-rules div .ul-containers ul {
+    width: calc(50% - 20px);
+  }
+  
+  .memory-rules div .ul-containers ul li {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 30px;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-rules div .ul-containers {
+      flex-direction: column;
+    }
+  
+    .memory-rules div .ul-containers ul {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-rules div .ul-containers ul li {
+      font-size: 25px;
+    }
+  }
+  
+  .memory-rules div h2 {
+    align-self: flex-start;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-rules div h2 {
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-rules div h2 {
+      font-size: 30px;
+    }
+  }
+  
+  .memory-rules div button {
+    background-color: #ffffff;
+    color: #1a202c;
+    padding: 10px 25px;
+    border-radius: 5px;
+    align-self: flex-start;
+    border: 0px solid;
+  }
+  
+  @media (max-width: 567px) {
+    .memory-rules div button {
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .memory-rules div button {
+      font-size: 30px;
+      padding: 15px 30px;
+    }
+  }

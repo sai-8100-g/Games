@@ -1,0 +1,119 @@
+.card-flip {
+    background-color: #14332e;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  
+  .card-flip .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-flip .container .back-btn {
+    background-color: transparent;
+    border: 0px solid;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    align-self: flex-start;
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+  }
+
+
+  @media (max-width:576px) {
+    .card-flip .container .back-btn {
+      position: static;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .card-flip .container .back-btn {
+      font-size: 30px;
+    }
+  }
+  
+  .card-flip .container img {
+    width: 60%;
+  }
+  
+  @media (max-width: 576px) {
+    .card-flip .container img {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .card-flip .container img {
+      width: 80%;
+    }
+  }
+  
+  .card-flip .container h2 {
+    color: #fff;
+    align-self: flex-start;
+  }
+  
+  @media (max-width: 576px) {
+    .card-flip .container h2 {
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .card-flip .container h2 {
+      font-size: 50px;
+    }
+  }
+  
+  .card-flip .container .ul-container {
+    display: flex;
+  }
+  
+  .card-flip .container .ul-container .list .item {
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .card-flip .container .ul-container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .card-flip .container .ul-container .list .item {
+      font-size: 25px;
+      line-height: 55px;
+    }
+  }
+  
+  .card-flip .container .start-btn {
+    padding: 10px 20px;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #14332e;
+    align-self: flex-start;
+  }
+  
+  @media (max-width: 576px) {
+    .card-flip .container .start-btn {
+      align-self: center;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .card-flip .container .start-btn {
+      font-size: 30px;
+    }
+  }

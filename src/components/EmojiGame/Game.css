@@ -1,0 +1,262 @@
+.emoji-game {
+    background: linear-gradient(179.51deg, #9796f0 0.41%, #fbc7d4 128.48%);
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .emoji-game .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+  }
+  
+  .emoji-game .button-container button:nth-child(1) {
+    border: 0px solid;
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .emoji-game .button-container button:nth-child(2) {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 2560px) {
+    .emoji-game .button-container button:nth-child(1) {
+      font-size: 30px;
+    }
+  
+    .emoji-game .button-container button:nth-child(2) {
+      font-size: 30px;
+      padding: 20px 40px;
+    }
+  }
+  
+  .emoji-game .emoji-ul {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 0px;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-game .emoji-ul {
+      width: 95%;
+    }
+  }
+  
+  .emoji-game .emoji-ul li {
+    width: calc(25% - 10px);
+    backdrop-filter: blur(20px);
+    border: 3px solid #ffffff30;
+    background: #ffffff33;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-game .emoji-ul li {
+      width: calc(33.33% - 10px);
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .emoji-game .emoji-ul {
+      gap: 20px;
+    }
+    .emoji-game .emoji-ul li {
+      height: 350px;
+      width: calc(25% - 20px);
+      border: 8px solid #ffffff30;
+      border-radius: 20px;
+    }
+  }
+  
+  .emoji-game .emoji-ul li button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 0px solid;
+    padding: 30px 20px;
+  }
+  
+  .emoji-game .emoji-ul li button img {
+    width: 50%;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-game .emoji-ul li button img {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 567px) and (max-width: 768px) {
+    .emoji-game .emoji-ul li button img {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    .emoji-game .emoji-ul li button img {
+      width: 80%;
+    }
+  }
+  
+  .emoji-game .failure-card {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #ffffff30;
+    backdrop-filter: blur(20px);
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-game .failure-card {
+      width: 95%;
+      flex-direction: column;
+    }
+  
+    .emoji-game .failure-card div:nth-child(2) {
+      order: 1;
+      width: 100%;
+    }
+  
+    .emoji-game .failure-card div:nth-child(1) {
+      order: 2;
+      width: 100%;
+    }
+  }
+  
+  .emoji-game .failure-card div {
+    width: 50%;
+  }
+  
+  .emoji-game .failure-card div:nth-child(1),
+  .emoji-game .failure-card div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .emoji-game .failure-card div:nth-child(1) p {
+    margin-bottom: 0px;
+  }
+  
+  .emoji-game .failure-card div:nth-child(1) h2 {
+    margin-top: 0px;
+    color: #523fff;
+  }
+  
+  .emoji-game .failure-card div:nth-child(1) button {
+    background-color: #ffce27;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0px solid;
+  }
+  
+  @media (min-width: 2560px) {
+    .emoji-game .failure-card div:nth-child(1) button {
+      font-size: 30px;
+    }
+  
+    .emoji-game .failure-card div:nth-child(1) h1,
+    .emoji-game .failure-card div:nth-child(1) h2 {
+      font-size: 50px;
+    }
+  
+    .emoji-game .failure-card div:nth-child(1) p {
+      font-size: 30px;
+    }
+  }
+  
+  .emoji-game .failure-card div:nth-child(2) img {
+    width: 70%;
+  }
+  
+  .emoji-popup {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .emoji-popup button {
+    background-color: transparent;
+    border: 0px solid;
+    align-self: flex-end;
+    font-size: 20px;
+  }
+  
+  .emoji-popup h2 {
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .emoji-popup ul {
+    padding: 10px;
+    padding-left: 30px;
+  }
+  
+  .emoji-popup ul li {
+    line-height: 32px;
+  }
+  
+  @media (max-width: 567px) {
+    .emoji-popup {
+      width: 300px;
+      height: 500px;
+      overflow: auto;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .emoji-popup {
+      width: 1000px;
+    }
+  
+    .emoji-popup h2 {
+      font-size: 50px;
+    }
+  
+    .emoji-popup ul {
+      padding: 30px;
+      padding-left: 50px;
+    }
+  
+    .emoji-popup ul li {
+      font-size: 30px;
+      line-height: 60px;
+    }
+  
+    .emoji-popup button {
+      font-size: 30px;
+    }
+  }

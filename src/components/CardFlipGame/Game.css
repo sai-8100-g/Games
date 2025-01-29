@@ -1,0 +1,228 @@
+.flip-game {
+    background-image: url('https://res.cloudinary.com/dkbtw06um/image/upload/f_auto,q_auto/otkylqrs4y6mkihditzp');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-game .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (max-width: 576px) {
+    .flip-game .container {
+      width: 100%;
+    }
+  }
+  
+  .flip-game .container .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  
+  .flip-game .container .button-container button:nth-child(1) {
+    border: 0px solid;
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .flip-game .container .button-container button:nth-child(2) {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  .flip-game .container .h1-heading {
+    font-size: 55px;
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .flip-game .container .h1-heading {
+      font-size: 25px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .flip-game .container .h1-heading {
+      font-size: 150px;
+    }
+  }
+  
+  .flip-game .container .list {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    list-style: none;
+    padding: 0px;
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .flip-game .container .list {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .flip-game .container .list li {
+      font-size: 30px;
+    }
+  }
+  
+  .flip-game .container .game {
+    list-style: none;
+    padding: 20px;
+    background-color: #154315;
+    width: 75%;
+    height: 500px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+  .flip-game .container .game .item {
+    width: calc(100% / 5 - 10px);
+    /* background-color: #fff; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .game .item button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 0px solid;
+    transition: 0.5s;
+  }
+  
+  .game .item button img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .game .item button:nth-child(1) {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .game .item button:nth-child(2) {
+    background-color: #a7f3d080;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  @media (max-width: 576px) {
+    .flip-game .container .game {
+      width: 95%;
+      height: 400px;
+      padding: 10px;
+      gap: 5px;
+    }
+  
+    .flip-game .container .game .item {
+      width: calc(100% / 4 - 10px);
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .flip-game .container .game {
+      width: 80%;
+      height: 450px;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .flip-game .container .game {
+      height: 1000px;
+      padding: 40px;
+      gap: 12px;
+    }
+  }
+  
+  .time2 {
+    display: none;
+  }
+  
+  @media (max-width: 576px) {
+    .time1 {
+      display: none;
+    }
+  
+    .time2 {
+      display: block;
+    }
+  }
+  
+  .rotate-in {
+    animation: rotateIn 0.5s 1 ease-in-out forwards;
+  }
+  
+  .rotate-out {
+    animation: rotateOut 0.5s 1 ease-in-out forwards;
+  }
+  
+  @keyframes rotateIn {
+    0% {
+      transform: rotateY(0deg);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: rotateY(-90deg);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: rotateY(-180deg);
+      opacity: 1;
+      backface-visibility: visible;
+    }
+  }
+  
+  @keyframes rotateOut {
+    0% {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: rotateY(90deg);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: rotateY(180deg);
+      opacity: 0;
+      backface-visibility: hidden;
+    }
+  }
+  
+  .flip-popup {
+    z-index: 1000;
+  }

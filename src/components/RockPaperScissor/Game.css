@@ -1,0 +1,276 @@
+.rock-game {
+    background-color: #223a5f;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .rock-game .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rock-game .container .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  
+  .rock-game .container .button-container button:nth-child(1) {
+    border: 0px solid;
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .rock-game .container .button-container button:nth-child(2) {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game .container .button-container button:nth-child(1),
+    .rock-game .container .button-container button:nth-child(2) {
+      font-size: 30px;
+    }
+  }
+  
+  .rock-game .container .heading {
+    font-size: 60px;
+    margin-bottom: 0px;
+    color: #fff;
+  }
+  
+  .rock-game .container .para {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game .container .heading {
+      font-size: 30px;
+    }
+  
+    .rock-game .container .para {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game .container .heading {
+      font-size: 120px;
+    }
+  
+    .rock-game .container .para {
+      font-size: 35px;
+    }
+  }
+  
+  .rock-game .container .frame-container {
+    position: relative;
+    width: 320px;
+    height: 300px;
+  }
+  
+  .rock-game .container .frame-container .frame {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .rock-game .container .frame-container .img-btn {
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rock-game .container .frame-container .img-btn img {
+    width: 150%;
+    height: 150%;
+  }
+  
+  .frame-container .rock {
+    top: 5%;
+    left: -4%;
+  }
+  
+  .frame-container .scissor {
+    top: 5%;
+    right: -5%;
+  }
+  
+  .frame-container .paper {
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  @media (max-width: 576px) {
+    .rock-game .container .frame-container {
+      width: 280px;
+      height: 250px;
+    }
+  
+    .rock-game .container .frame-container .img-btn {
+      width: 90px;
+      height: 80px;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-game .container .frame-container {
+      width: 880px;
+      height: 800px;
+    }
+  
+    .rock-game .container .frame-container .img-btn {
+      width: 280px;
+      height: 250px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .rock-popup {
+    position: absolute;
+    width: 70%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-popup {
+      width: 95%;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .rock-popup {
+      width: 80%;
+    }
+  }
+  
+  .rock-popup button {
+    align-self: flex-end;
+    border: 0px solid;
+    border-top-right-radius: 10px;
+    color: #2a2828;
+  }
+  
+  .rock-popup h2 {
+    color: #2a2828;
+    align-self: center;
+  }
+  
+  .rock-popup .ul-container {
+    display: flex;
+    padding: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    .rock-popup .ul-container {
+      height: 300px;
+      overflow-y: auto;
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .rock-popup .ul-container {
+      height: 500px;
+      overflow-y: auto;
+      flex-direction: column;
+    }
+  }
+  
+  .rock-popup .ul-container .list {
+    width: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .rock-popup .ul-container .list {
+      width: 100%;
+    }
+  }
+  
+  .rock-popup .ul-container .list .item {
+    color: #2a2828;
+    line-height: 30px;
+  }
+  
+  .rock-popup .ul-container .list .item span {
+    color: #c2750b;
+  }
+  
+  @media (min-width: 2560px) {
+    .rock-popup .ul-container .list .item {
+      line-height: 55px;
+      font-size: 25px;
+    }
+  
+    .rock-popup button {
+      font-size: 30px;
+    }
+  
+    .rock-popup h2 {
+      font-size: 50px;
+    }
+  }
