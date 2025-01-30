@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./HomePage.css"
 
 // const imgArr = [
 //     {
@@ -41,10 +42,6 @@ import { Link } from 'react-router-dom';
 //   ]
 
 
-const homeContainer = {
-    width: window.innerWidth < 576 ? "87vh" : "", 
-    overflow:"auto"
-}
 
 
 
@@ -64,7 +61,7 @@ const HomePage = () => {
         >
           Games
         </h1>
-        <div style={homeContainer} className="col-12 col-md-11 m-auto d-flex flex-wrap  gap-2 justify-content-center align-items-center ">
+        <div className="col-12 col-md-11 m-auto d-flex flex-wrap  gap-2 justify-content-center align-items-center home-container">
           <Link
             to="/emoji-game"
             className="col-12 col-md-5 bg-white d-flex justify-content-center align-items-center p-2 rounded shadow"

@@ -1,0 +1,6 @@
+@media (max-width:576px) {
+    .home-container {
+        height: 87vh; 
+        overflow: auto;
+    }
+}
